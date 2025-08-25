@@ -1,0 +1,43 @@
+{
+  "name": "vue3-vite-component-tagger",
+  "version": "1.0.0",
+  "description": "A Vite plugin that automatically adds data attributes to your Vue 3 components.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch",
+    "lint": "eslint . --max-warnings 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vue",
+    "vue3"
+  ],
+  "author": "Yaob1990",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "vite": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.4.0",
+    "magic-string": "^0.30.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "eslint": "^8.52.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
