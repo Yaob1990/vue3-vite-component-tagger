@@ -1,6 +1,6 @@
 {
   "name": "vue3-vite-component-tagger",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A Vite plugin that automatically adds data attributes to your Vue 3 components.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
